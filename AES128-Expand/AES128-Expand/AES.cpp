@@ -49,10 +49,8 @@ string decToHexa(int n)
     return ss.str();
 }
 
-string hexaToDec(string s) {
-    int dec = stoi(s, 0, 16);
-    string res = to_string(dec);
-    return res;
+int hexaToDec(string s) {
+    return stoi(s, 0, 16);
 }
 
 int main() {
