@@ -1,6 +1,8 @@
 #include<iostream>
 #include<string>
 #include<sstream>
+#include<cstdlib>
+#include<cstring>
 
 using namespace std;
 
@@ -45,6 +47,12 @@ string decToHexa(int n)
     for (int j = i - 1; j >= 0; j--)
         ss<<hex[j];
     return ss.str();
+}
+
+string hexaToDec(string s) {
+    int dec = stoi(s, 0, 16);
+    string res = to_string(dec);
+    return res;
 }
 
 int main() {
